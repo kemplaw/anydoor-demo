@@ -1,0 +1,8 @@
+logs
+*.logs
+node_modules/
+*.swp
+.idea/
+.DS_Store
+build/
+dist/
