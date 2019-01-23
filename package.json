@@ -2,7 +2,6 @@
   "name": "anydoor-demo",
   "version": "1.0.0",
   "description": "一个node.js的demo项目",
-  "main": "index.js",
   "pre-commit": [
     "fix",
     "lint"
@@ -12,9 +11,12 @@
     "lint": "eslint .",
     "fix": "eslint --fix ."
   },
-  "author": "",
+  "author": "kemplaw@hotmail.com",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "handlebars": "^4.0.12"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.12.1",

@@ -1,19 +1,21 @@
 module.exports = {
   parser: 'babel-eslint',
   env: {
-    browser: true,
+    node: true,
+    browser: false,
     commonjs: true,
     es6: true
   },
   extends: 'eslint:recommended',
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 8,
     sourceType: 'module'
   },
   rules: {
-    indent: ['error', 4],
+    indent: ['error', 2],
     'linebreak-style': ['error', 'windows'],
     quotes: ['error', 'single'],
-    semi: ['error', 'never']
+    semi: ['error', 'never'],
+    'no-console': ['error', { allow: ['warn', 'error', 'info'] }]
   }
 }
