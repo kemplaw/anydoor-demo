@@ -3,11 +3,21 @@
   "version": "1.0.0",
   "description": "一个node.js的demo项目",
   "main": "index.js",
+  "pre-commit": [
+    "fix",
+    "lint"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "fix": "eslint --fix ."
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.1",
+    "pre-commit": "^1.2.2"
+  }
 }
