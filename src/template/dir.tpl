@@ -29,6 +29,10 @@
 </head>
 
 <body>
+  <div>
+    <a href="javascript:history.back()">Back</a>
+  </div>
+
   {{#each files}}
   <a href="{{../dir}}/{{file}}">[{{icon}}]----{{file}}</a>
   {{/each}}

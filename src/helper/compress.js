@@ -6,7 +6,7 @@ module.exports = (rs, req, res) => {
 
   if (!acceptEncoding || !acceptEncoding.match(/\b(gzip|deflate)\b/)) {
     return rs
-  } else if (acceptEncoding.match(/\bgzpi\b/)) {
+  } else if (acceptEncoding.match(/\bgzip\b/)) {
     res.setHeader('Content-Encoding', 'gzip')
     return rs.pipe(createGzip())
   } else if (acceptEncoding.match(/\bdeflate\b/)) {
